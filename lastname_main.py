@@ -1,16 +1,23 @@
-# This is a sample Python script.
+import bubble_sort
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+print("----chose an option for sorting----\n"
+      "1. Buble sort\n"
+      "2. Insertion sort\n"
+      "3. Selection sort\n")
+
+SortSelect = int(input("[-] Please select a sort you want to use:"))
+
+if SortSelect == 1:
+      from bubble_sort import numbers
+      print(numbers)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+elif SortSelect == 2:
+      from insertion_sort import numbers
+      print(numbers)
 
+elif SortSelect == 3:
+      print(6)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+else:
+      print("that's not an option pls try again")
