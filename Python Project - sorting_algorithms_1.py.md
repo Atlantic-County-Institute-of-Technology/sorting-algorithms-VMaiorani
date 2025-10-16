@@ -9,15 +9,19 @@ This project builds upon our understanding of sorting algorithms, menus, and dat
 
 ## Key Requirements
 By the end of this project, your program should allow for the following functionality:
-- [ ] **Allow the user to choose** their preferred sorting method with a main menu. This menu should also clear the screen upon making each selection.
+
+[//]: # (- [ ] **Allow the user to choose** their preferred sorting method with a main menu. This menu should also clear the screen upon making each selection.)
 - [ ] **Validate user input**, like the following:
 	- Making sure the list size is a positive integer.
 	- Validating that the minimum range is less than the maximum range for values in the list.
 	- Handling invalid menu selections gracefully.
 - [ ] **Generate a list of integer values**, and allow the user to change both the number and range of those values.
-- [ ] **Perform a Bubble Sort** correctly and efficiently *(Note: this will only be required to work, it has already been graded)*
-- [ ] **Perform an Insertion Sort** correctly and efficiently.
-- [ ] **Perform a Selection Sort** correctly and efficiently.
+
+[//]: # (- [ ] **Perform a Bubble Sort** correctly and efficiently *&#40;Note: this will only be required to work, it has already been graded&#41;*)
+
+[//]: # (- [ ] **Perform an Insertion Sort** correctly and efficiently.)
+
+[//]: # (- [ ] **Perform a Selection Sort** correctly and efficiently.)
 - [ ] **Display performance metrics**, including the following for each sort:
 	- The number of times a loop has executed.
 	- The number of "sorting actions" (swapping, inserting, etc.) that have occurred.
