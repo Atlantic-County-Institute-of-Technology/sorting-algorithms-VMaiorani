@@ -22,10 +22,13 @@ By the end of this project, your program should allow for the following function
 [//]: # (- [ ] **Perform an Insertion Sort** correctly and efficiently.)
 
 [//]: # (- [ ] **Perform a Selection Sort** correctly and efficiently.)
-- [ ] **Display performance metrics**, including the following for each sort:
-	- The number of times a loop has executed.
-	- The number of "sorting actions" (swapping, inserting, etc.) that have occurred.
-	- The time (in seconds) it took for that algorithm to complete.
+[//]: # (- [ ] **Display performance metrics**, including the following for each sort:)
+
+[//]: # (	- The number of times a loop has executed.)
+
+[//]: # (	- The number of "sorting actions" &#40;swapping, inserting, etc.&#41; that have occurred.)
+
+[//]: # (	- The time &#40;in seconds&#41; it took for that algorithm to complete.)
 
 ---
 ## Submission Guidelines

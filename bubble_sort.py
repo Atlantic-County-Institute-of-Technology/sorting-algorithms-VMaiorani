@@ -3,7 +3,7 @@ import time
 
 total_loops = 0
 total_actions = 0
-numbers = [random.randint(1, 100) for i in range(100)]
+numbers = [random.randint(1, 100) for i in range(10)]
 print("Initial Order: " + str(numbers))
 
 start_time = time.time()

@@ -1,6 +1,6 @@
 import random
 import time
-
+# from lastname_main import MinimumRange, MaximumRange, Range
 total_loops = 0
 total_actions = 0
 
@@ -17,13 +17,13 @@ for i in range(len(numbers)):
         numbers[j] = numbers[j-1]
         numbers[j-1] = temp
         j = j-1
-        print(numbers)
+        # print(numbers)
         total_actions += 1
     total_loops += 1
+#     added extra stuff to track loops, actions, and time to complete the sort
 end_time = time.time()
 elapsed_time = end_time - start_time
 rounded_time = round(elapsed_time, 4)
 print(rounded_time)
-print
 print(numbers)
 

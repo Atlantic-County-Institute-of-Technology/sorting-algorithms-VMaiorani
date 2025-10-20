@@ -4,7 +4,7 @@ import random
 
 
 # Gets a random numbers
-numbers = [random.randint(1, 100) for i in range(1000)]
+numbers = [random.randint(1, 100) for i in range(10)]
 print("Initial order: "+str(numbers))
 # start_time = time.time()
 def selectionSort(array, size):
