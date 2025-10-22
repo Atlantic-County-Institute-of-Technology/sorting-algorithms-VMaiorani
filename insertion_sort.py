@@ -24,6 +24,6 @@ for i in range(len(numbers)):
 end_time = time.time()
 elapsed_time = end_time - start_time
 rounded_time = round(elapsed_time, 4)
-print(rounded_time)
-print(numbers)
+# print(rounded_time)
+# print(numbers)
 

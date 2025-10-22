@@ -1,6 +1,7 @@
+import random
 MinimumRange = 1
 MaximumRange = 100
-Range = 10
+Range = 20
 
 while True:
       print("----chose an option for sorting----\n"
@@ -13,22 +14,43 @@ while True:
       SortSelect = int(input("[-] Please select a sort you want to use:"))
 
       if SortSelect == 1:
+            numbers = [random.randint(MinimumRange, MaximumRange) for i in range(Range)]
             from bubble_sort import numbers
             from bubble_sort import total_loops
             from bubble_sort import total_actions
             from bubble_sort import rounded_time
 
+            print(f"---------------------------------------------------------------\n"
+                  f"Sorted order: {numbers}\n"
+                  f"Total loops: {total_loops}\n"
+                  f"Total Sorting Actions: {total_actions}\n"
+                  f"Total Elapsed Time: {rounded_time}\n"
+                  f"---------------------------------------------------------------")
+
+
       elif SortSelect == 2:
-            from insertion_sort import numbers
+            numbers = [random.randint(MinimumRange, MaximumRange) for i in range(Range)]
+            from bubble_sort import numbers
             from insertion_sort import total_loops
             from insertion_sort import total_actions
             from insertion_sort import rounded_time
 
+            print(f"---------------------------------------------------------------\n"
+                  f"Sorted order: {numbers}\n"
+                  f"Total loops: {total_loops}\n"
+                  f"Total Sorting Actions: {total_actions}\n"
+                  f"Total Elapsed Time: {rounded_time}\n"
+                  f"---------------------------------------------------------------")
+
       elif SortSelect == 3:
-            from selection_sort import numbers
-            from selection_sort import total_loops
-            from selection_sort import total_actions
-            from selection_sort import rounded_time
+            numbers = [random.randint(MinimumRange, MaximumRange) for i in range(Range)]
+            from bubble_sort import numbers
+
+            print (f"---------------------------------------------------------------\n"
+                  f"Sorted order: {numbers}\n"
+                  f"---------------------------------------------------------------" )
+
+
 
       elif SortSelect == 4:
             print("you have selected configuration you can select from the following options to change how each sort will change.")
@@ -44,16 +66,9 @@ while True:
                         "1. Your input must be a positive integer\n"
                         "2. You input must be less than your maximum range\n"
                         "3. No 67 at all")
+            MinimumRange = int(input("[-] Please select the minimum range you would like:"))
 
 
 
       else:
             print("that's not an option pls try again")
-
-      # What will be printed after the selection process
-      print(f"---------------------------------------------------------------\n"
-            f"Sorted order: {numbers}\n"
-            f"Total loops: {total_loops}\n"
-            f"Total Sorting Actions: {total_actions}\n"
-            f"Total Elapsed Time: {rounded_time}\n"
-            f"---------------------------------------------------------------" )
