@@ -1,9 +1,13 @@
-import random
+
+
 MinimumRange = 1
 MaximumRange = 100
 Range = 20
 
 while True:
+      import random
+      (print(MinimumRange))
+
       print("----chose an option for sorting----\n"
             "1. Bubble sort\n"
             "2. Insertion sort\n"
@@ -67,7 +71,7 @@ while True:
                         "2. You input must be less than your maximum range\n"
                         "3. No 67 at all")
             MinimumRange = int(input("[-] Please select the minimum range you would like:"))
-
+            print(MinimumRange)
 
 
       else:

@@ -1,9 +1,12 @@
 import random
 import time
 
+x = 1
+y = 100
+
 total_loops = 0
 total_actions = 0
-numbers = [random.randint(1, 100) for i in range(10)]
+numbers = [random.randint(x, y) for i in range(10)]
 print("Initial Order: " + str(numbers))
 
 start_time = time.time()
