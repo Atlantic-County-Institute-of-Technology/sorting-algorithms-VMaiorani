@@ -1,36 +1,28 @@
-import random
 import time
 
 
+def selection_sort(numbers):
+    # variables
+    num_before = str(numbers)
+    lc = 0
+    sc = 0
+    start_time = time.time()  # get time
+    n = len(numbers)
+    for ind in range(n):
+        lc = lc + 1
+        min_index = ind
 
-# Gets a random numbers
-numbers = [random.randint(1, 100) for i in range(10)]
-print("Initial order: "+str(numbers))
-start_time = time.time()
-
-def selectionSort(array, size):
-    total_loops = 0
-    total_actions = 0
-
-    for step in range(size):
-        min_idx = step
-
-        for i in range(step + 1, size):
-
-            # to sort in descending order, change > to < in this line
-            # select the minimum element in each loop
-            if array[i] < array[min_idx]:
-                min_idx = i
-        # put min at the correct position
-        (array[step], array[min_idx]) = (array[min_idx], array[step])
-        total_actions += 1
-    total_loops += 1
-    print(total_loops)
-    print(total_actions)
-
-end_time = time.time()
-elapsed_time = end_time - start_time
-rounded_time = round(elapsed_time,4)
-print(rounded_time)
-size = len(numbers)
-selectionSort(numbers, size)
+        for j in range(ind + 1, n):  # run for every item in loop
+            lc = lc + 1
+            if numbers[j] < numbers[min_index]:  # swap smallest # with first unsorted number, this # is now sorted
+                min_index = j
+                sc = sc + 1
+        (numbers[ind], numbers[min_index]) = (numbers[min_index], numbers[ind])
+    end_time = time.time()  # get time
+    elapsed_time = end_time - start_time  # difference of times
+    return numbers, elapsed_time, lc, sc
+    # print(f"before {num_before}")
+    # print(f"after {numbers}")
+    # print(f"Loop count: {lc}")
+    # print(f"Sorting actions: {sc}")
+    # print(f"Time elapsed: {elapsed_time:.2f}s")
