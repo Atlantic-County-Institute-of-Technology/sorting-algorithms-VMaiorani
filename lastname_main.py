@@ -114,6 +114,7 @@ while True:
                     print("Your new maximum range is: " + str(MaximumRange))
                     break
 
+            # finish
             # while True:
                     # print("---------------You may select your minimum range(default = 1)---------------\n"
                     #   "---Important things to know---\n"
